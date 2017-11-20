@@ -13,6 +13,9 @@
   "author": "DarthQ",
   "license": "ISC",
   "dependencies": {
-    "fs": "0.0.1-security"
+    "axios": "^0.17.1",
+    "fs": "0.0.1-security",
+    "node-spotify-api": "^1.0.7",
+    "twitter": "^1.7.1"
   }
 }
