@@ -52,7 +52,7 @@ for (; i < process.argv.length; i++) {
 liriCmdArg = liriCmdArg.trim(); //remove leading space
 
 if (liriCmd === "get-tweets") {
-    output = getTweets(liriCmdArg, liriLogOutput);
+    getTweets(liriCmdArg, liriLogOutput);
 }
 else if (liriCmd === "spotify-this-song") {
     console.log("Spotify under construction");
