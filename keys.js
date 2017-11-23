@@ -10,7 +10,7 @@ var keys = {
     secret: "1e23df01e1074b5f8d1fca54bf277a6c"
   },
   omdb: {
-    apiKey: "40e9cece"
+    apiKey: "trilogy"
   }
 }
 
