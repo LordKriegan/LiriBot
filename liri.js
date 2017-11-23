@@ -1,5 +1,6 @@
 var fs = require('fs');
 var keys = require('./keys.js');
+var axios = require('axios');
 var Twitter = require('twitter');
 var Spotify = require('node-spotify-api');
 
@@ -117,10 +118,10 @@ else if (liriCmd === "do-what-it-says") {
     console.log("external file cmds under construction");
 } else {
     console.error(`
-    Command not recognized! Use one of the following:
+    Command not recognized! Use one of the following: 
     get-tweets [-s] [username]
     spotify-this-song [-s]  [song name]
-    movie-this [movie [-s] name]
+    movie-this [movie [-s] [name]
     do-what-it-says [-s]
     Note: using the -s flag will log the output.`)
 }
