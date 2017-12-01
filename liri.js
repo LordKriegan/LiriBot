@@ -111,7 +111,7 @@ function logOutput(arrOutput, boolLogOutput) {
     if (boolLogOutput) {//if boolLogOutput is true, save to external file. boolLogOutput needs to be passed around through functions because calls are asynchronous and a global var may not always be what we want it to be
         for (var i = 0; i < arrOutput.length; i++) {
             try {
-            fs.appendFileSync("liriLog.txt", arrOutput[i] + os.EOL, "utf8");
+            fs.appendFileSync("liriLog.txt", arrOutput[i] + "\n", "utf8");
             } catch (error) {
                 console.log(error);
             }
@@ -123,7 +123,7 @@ function extCmds() {
     var data;//try opening up random.txt and running commands inside
     try {
         data = fs.readFileSync('random.txt', "utf8");
-        var cmds = data.split(os.EOL);
+        var cmds = data.split("\n");
         var cmdsArgs;
         for (var i = 0; i < cmds.length - 1; i++) { //end of file will always have an empty string, ignore it by reducing loop iterations by 1
             cmdsArgs = cmds[i].split("|");
@@ -185,7 +185,7 @@ function saveCmd() {
         }//build string to save to file
     }
     saveStr = saveStr.trim();
-    fs.appendFileSync('random.txt', saveStr + os.EOL, "utf8");//add command to list of saved commands
+    fs.appendFileSync('random.txt', saveStr + "\n", "utf8");//add command to list of saved commands
 }
 //PROG STARTS RUNNING HERE
 var liriCmd = process.argv[2]; //cmd to execute

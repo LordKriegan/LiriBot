@@ -1,9 +1,3 @@
-get-tweets|-l|random
-spotify-this-song|Gangsta Rap Made Me Do It
-movie-this|-l|Thor
-movie-this|-l|Star Wars
-movie-this|-l|Batman
-movie-this|Mad Max
-get-tweets|realDonaldTrump
-get-tweets|-l|LordKriegan
-spotify-this-song|-l|Mockingbird
+get-tweets|-l|joelvanderhoof
+spotify-this-song|Boy Named Sue
+movie-this|the matrix
